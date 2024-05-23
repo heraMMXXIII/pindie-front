@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import Styles from "./Header.module.css";
 import { Overlay } from "../Overlay/Overlay.jsx";
-import { Popup } from "../Popup/Popup.jsx";
+import { Popup } from "../PopUp/Popup.jsx";
 import { AuthForm } from "../AuthForm/AuthForm.jsx";
 
 import Link from "next/link";
