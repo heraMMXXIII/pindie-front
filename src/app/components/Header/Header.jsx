@@ -3,14 +3,14 @@
 import { useState } from "react";
 
 import Styles from "./Header.module.css";
-import { Overlay } from "../Overlay/Overlay";
-import { Popup } from "../Popup/Popup";
-import { AuthForm } from "../AuthForm/AuthForm";
+import { Overlay } from "../Overlay/Overlay.jsx";
+import { Popup } from "../Popup/Popup.jsx";
+import { AuthForm } from "../AuthForm/AuthForm.jsx";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { useStore } from "@/app/store/app-store";
+import { useStore } from "@/app/store/app-store.js";
 
 export const Header = () => {
   const [popupIsOpened, setPopupIsOpened] = useState(false);
