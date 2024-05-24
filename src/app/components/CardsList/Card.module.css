@@ -1,0 +1,53 @@
+@media (width <=1024px) {
+  .cards_list {
+    padding: 68px 40px;
+    gap: 30px;
+  }
+}
+
+@media (width <=650px) {
+  .cards_list {
+    padding: 68px 14px;
+  }
+}
+
+.list_section:not(:first-of-type) {
+  margin-top: 40px;
+}
+
+.list_section__title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 4px solid black;
+  padding: 20px 40px 14px;
+  position: relative;
+}
+
+.list_section__title::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 25px;
+  background-color: #ffff00;
+  width: 60px;
+  height: 45px;
+  z-index: -1;
+}
+
+.cards_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+  gap: 45px;
+  padding: 68px 120px;
+}
+
+@media (width <=650px) {
+  .list_section__title {
+    padding: 20px 14px 14px;
+  }
+
+  .list_section__title::before {
+    left: 6px;
+  }
+}
